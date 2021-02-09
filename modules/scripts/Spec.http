@@ -1,0 +1,11 @@
+# GET http://localhost:9000/healthcheck
+
+# POST http://localhost:9000/v1/users
+# Content-Type: application/json
+# {
+# "username": "user-126",
+# "password": "password-123"
+# }
+
+GET http://localhost:9000/v1/users/user-126
+

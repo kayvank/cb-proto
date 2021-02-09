@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  postgres_db:
+    image: postgres:latest
+    command: ["postgres", "-c", "log_statement=all"]
+    restart: always
+    user: ${CURRENT_UID}
+    environment:
+      POSTGRES_USER: "q2io"
+      POSTGRES_DB: "q2io"
+      POSTGRES_PASSWORD: "password"
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
