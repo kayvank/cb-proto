@@ -1,6 +1,10 @@
 cb-proto
 ----
-Sample Scala http service
+Sample Scala http service demonstring use of Scala
+- [refined types](https://github.com/fthomas/refined)
+- [value types with newtype wrapper](https://github.com/estatico/scala-newtype)
+- [postgres skunk](https://github.com/tpolecat/skunk)
+- [functional Configuration](https://cir.is/)
 
 ## Description
 Prototype for a quick Scala [http4s](https://http4s.org/) with [skunk](https://github.com/tpolecat/skunk) service
